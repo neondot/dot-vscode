@@ -1,0 +1,25 @@
+{
+    "name": "dot-vscode",
+    "displayName": "dot-vscode",
+    "description": "Add dot framework single file components support for vscode",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.52.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "dot",
+            "aliases": ["Dot", "dot"],
+            "extensions": [".dotc"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "dot",
+            "scopeName": "source.dot",
+            "path": "./syntaxes/dot.tmLanguage.json"
+        }]
+    }
+}
